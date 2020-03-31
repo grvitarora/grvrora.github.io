@@ -1,0 +1,7 @@
+.cartcount{
+    background: red;
+    border-radius: 40px;
+    font-size: .65em;
+    position: absolute;
+    padding: 0px 6px;
+}

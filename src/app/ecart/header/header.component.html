@@ -1,0 +1,15 @@
+<header class="col-md-12 header" style="padding:10px 45px">
+    <span style="font-size:2rem">
+    <a routerLink="Dashboard"><i style="color:gold"class="fa fa-star 4x"></i></a>
+    </span>
+    <span style="float:right;font-size:2rem;color:#ffff;" >
+    <i class="fa fa-search 14x;margin:0 10px"></i>
+    <a routerLink="Cart">   
+    <i style="color:#fff"class="fa fa-shopping-cart 4x">
+        <span class="cartcount" *ngIf="(HeaderCount$|async) as count">
+            {{count}}
+        </span>
+    </i></a>
+    </span>
+</header>
+

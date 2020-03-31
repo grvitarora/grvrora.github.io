@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.header{
+    height:50px;
+    background-color: cornflowerblue;
+}
+.filterssort{
+    margin:10px 0 15px 0;
+   }
+   .dashboardsort{
+    padding:0 30px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: verdana }
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@font-face {
+    font-family: verdana;
+    src: url(./assets/verdana/verdana.ttf) format('truetype')  }

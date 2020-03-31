@@ -1,0 +1,26 @@
+.dashboardsort{
+    padding:0 30px;
+}
+.list{
+    margin:5px 0;
+}
+.cartbutton{
+    background-color: goldenrod;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 3px 0;
+    font-weight: bold;
+ }
+ .pointer{
+     cursor: pointer;
+ }
+ .hg{
+min-height: 84vh;
+ }
+ .cartdetail{
+    padding:20px 5px;
+    background:#ffff;
+    display:flex;
+    border:2px solid black
+ }

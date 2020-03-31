@@ -1,0 +1,10 @@
+
+ul li{
+    list-style-type: none;
+}
+.filter{
+    border-bottom: 1px solid gray;
+    margin-bottom: 50px 0;
+    margin: 11px 0;
+    padding: 10px;
+}

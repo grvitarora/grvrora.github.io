@@ -1,0 +1,17 @@
+<div class="container-fluid">
+ <div>
+ <div class="row">
+  <div class="col-md-2 list" *ngFor="let List of (productList$|async)">
+    <span>
+      <img class="dashimg" [src]="List.img_url"/>
+    </span>
+  <div>
+   <p>{{List.name}}</p>
+    <span style="font-weight: bold;">${{List.discountprice}} </span>
+   <del>${{List.price}} </del>
+    <span class="discount"> {{List.discount}}% off</span>
+  </div>
+  <span (click)="addcart(List,'plus')"class="cartbutton">Add to Cart</span>
+  </div>
+ </div>
+</div>

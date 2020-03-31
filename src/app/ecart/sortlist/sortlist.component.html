@@ -1,0 +1,15 @@
+<div [hidden]="mobile" class="row dashboardsort">
+<h3 > Sort By</h3>
+<ul>
+    <li class="point" [ngClass]="{activeclass:activeclass=='asc'}"(click)="sortdata('asc')">Price == Low High</li>
+    <li class="point" [ngClass]="{activeclass:activeclass=='desc'}"(click)="sortdata('desc')">Price == High Low</li>
+    <li class="point" [ngClass]="{activeclass:activeclass=='discount'}"(click)="sortdata('discount')">Discount</li>
+</ul>
+</div>
+<div [hidden]="!mobile" class="row dashboardsort">
+    <ul>
+        <li class="point" (click)="openSortDialog()">Sort <i style="color:#000"class="fa fa-sort 4x"></i></li>
+        <li class="point" (click)="openFilterDailog()">Filter <i style="color:#000"class="fa fa-filter 4x"></i></li>
+    </ul>
+</div>
+    

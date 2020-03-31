@@ -1,0 +1,32 @@
+<mat-dialog-content>
+     <div class="col-12" style="border-bottom: 1px solid gray;margin-bottom: 10px;">
+        <h4 style="font-weight: bold;">Sort Options</h4>
+        <ul style="padding:0">
+
+        <li (click)="sortdata('asc')">
+            <div class="custom-control custom-radio">
+            <input name="sort" class="custom-control-input" id="Asc"  type="radio">         
+            <label class="custom-control-label" for="Asc">Price == Low High</label>
+            </div>
+        </li>
+        <li (click)="sortdata('desc')">
+            <div class="custom-control custom-radio">
+            <input name="sort" class="custom-control-input" id="Dsc"  type="radio">         
+            <label class="custom-control-label" for="Dsc">Price == High Low</label>
+            </div>
+        </li>
+        <li (click)="sortdata('discount')">
+            <div class="custom-control custom-radio">
+            <input name="sort" class="custom-control-input" id="Discount"  type="radio">         
+            <label class="custom-control-label" for="Discount">Discount</label>
+           </div>
+        </li>
+    </ul>
+  </div>
+  <div style="display: flex;"class="col-12">
+    <div class="col-6">
+        <span (click)="onApplyClick()" class="btn btn-primary">Apply</span>
+    </div>
+    <div class="btn btn-primary"><span (click)="onConfirmClick()" >Cancel</span></div>
+</div>  
+</mat-dialog-content>

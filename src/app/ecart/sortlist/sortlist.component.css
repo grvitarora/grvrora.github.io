@@ -1,0 +1,19 @@
+.filterssort{
+    padding:0 30px;
+}
+.dashboardsort{
+    margin:10px 0;
+}
+.dashboardsort ul li{
+    float:left;
+    padding:0 15px;
+    list-style-type: none;
+    margin:0 30px;
+}
+.point{
+    cursor: pointer;
+}
+.activeclass{
+color:cornflowerblue;
+ text-decoration: underline;
+}

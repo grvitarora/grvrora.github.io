@@ -1,0 +1,26 @@
+.dashboardsort{
+    padding:0 30px;
+}
+.list{
+    display:grid;
+    justify-content: center;
+    margin:5px 0;
+}
+.cartbutton{
+    background-color: goldenrod;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 3px 0;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .dashimg{
+    height:150px;
+    width:150px
+ }
+ .discount{
+    font-weight: bold;
+    color:lawngreen
+ }

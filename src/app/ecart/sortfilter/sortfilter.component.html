@@ -1,0 +1,8 @@
+<div  [hidden]="mobile" class="dashboard row" style="justify-content:center">
+<h3 class="filterssort">FIlters</h3>
+<ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
+<div>
+<p style="text-align: center;">Price</p>
+<span (click)="filter()" class="cartbutton">Apply</span>
+</div>
+</div>

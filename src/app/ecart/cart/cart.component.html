@@ -1,0 +1,41 @@
+<div class="container-fluid hgh">
+  <div style="background-color: ghostwhite"class="col-md-12">
+    <div class="row dashboardsort">
+      <div class="col-md-8">
+        <div class="col-md-12 list cartdetail"  *ngFor="let List of (cartdetails$|async)">
+            <span>
+              <img style="height:150px;width:150px"[src]="List.img_url"/>
+            </span>
+            <div style="margin:0 15px">
+                <p>{{List.name}}</p>
+        <div>
+        <span style="font-weight: bold;">${{List.discountprice}} </span>
+        <del>${{List.price}} </del>
+           <span style="font-weight: bold;margin:0 5px;color:lawngreen"> {{List.discount}}% off</span>
+            <span style="font-size:23px;">    
+                <i (click)="updateCart(List,'plus')"class="fa fa-plus-circle 5x pointer"></i>
+                {{List.count}} <i (click)="updateCart(List,'minus')"class="fa fa-minus-circle 5x pointer"></i>
+            </span>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-12 list" style="border:2px solid black;color:black">
+                <h5 style> PRICE DETAILS</h5>
+                <div style="display: flex;"class="col-md-12">
+                <div class="col-md-6">Price  :</div>
+                <div class="col-md-6">{{priceBS$ |async}} </div>
+                </div>
+                <div style="display: flex;border-bottom: 1px solid black;"class="col-md-12">
+                    <div class="col-md-6">Discount      : </div>
+                    <div class="col-md-6">{{(priceBS$|async) - (TotalPayable$|async)}} </div>
+                    </div>
+                    <div style="display: flex;"class="col-md-12">
+                        <div class="col-md-12" style="font-weight: bold;margin:10px 0;">Total payable  :{{TotalPayable$|async}} </div>
+                      </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
